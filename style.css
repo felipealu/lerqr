@@ -1,0 +1,26 @@
+/* Estilo para os campos de informação */
+#infoFields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#infoFields div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#infoFields label {
+  font-weight: bold;
+  color: #333;
+}
+
+#infoFields input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
