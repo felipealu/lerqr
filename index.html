@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Leitor de QR Code com a Câmera</h1>
+  <video id="video" width="200" height="200" autoplay></video>
+  <canvas id="canvas" hidden></canvas>
+  <p id="output">Aponte para um QR code</p>
+
+  <!-- Campos para informações detectadas -->
+  <div id="infoFields">
+    <div>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" readonly>
+    </div>
+    <div>
+      <label for="identification">Identificação:</label>
+      <input type="text" id="identification" readonly>
+    </div>
+    <div>
+      <label for="vehicle">Veículo/Placa:</label>
+      <input type="text" id="vehicle" readonly>
+    </div>
+  </div>
+
+  <p id="outputData"></p>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
